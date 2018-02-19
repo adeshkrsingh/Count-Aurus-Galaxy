@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class ScoreService {
-
+  private counter = 0;
   constructor() { }
 
   public saveScore(content) {
@@ -20,6 +20,23 @@ export class ScoreService {
       return 0;
     }
     return data;
+  }
+
+  public resetAttempt() {
+    this.counter = 0;
+  }
+  public setCorrectAttempt(content) {
+    this.counter++;
+  }
+  public getCorrectAttempt() {
+    return this.counter;
+  }
+  public isMissionPassed() {
+    if(this.counter == 5) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
 }

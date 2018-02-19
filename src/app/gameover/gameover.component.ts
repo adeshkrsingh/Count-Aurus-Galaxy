@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ScoreService } from '../services/score.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-gameover',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GameoverComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router, private myscores: ScoreService) { }
 
   ngOnInit() {
+  }
+
+  playAgain() {
+    this.myscores.resetAttempt();
+    this.router.navigate(['/module1']);
+  }
+  nextMission() {
+    this.router.navigate(['/module2']);
   }
 
 }

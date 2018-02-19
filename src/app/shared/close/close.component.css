@@ -1,0 +1,13 @@
+.close-title {
+    color: wheat;
+    font-size: 30px;
+    float: right;
+}
+.shared-close {
+    margin-top: 0;
+    /* margin-right: 0; */
+    /* position: fixed; */
+    z-index: 25;
+    text-align: right;
+    float: right;
+}

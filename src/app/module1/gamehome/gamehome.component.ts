@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ScoreService } from '../../services/score.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-gamehome',
@@ -23,7 +24,7 @@ export class GamehomeComponent implements OnInit {
   showLoader: boolean;
   showCheck: boolean;
 
-  constructor(private myscores: ScoreService) { }
+  constructor(private router: Router,private myscores: ScoreService) { }
 
   ngOnInit() {
     this.numberOnes = 0;
@@ -88,6 +89,10 @@ export class GamehomeComponent implements OnInit {
         this.showCheck = true;
         setTimeout(() => {
           this.showCheck = false;
+          this.myscores.setCorrectAttempt(1);
+          if(this.myscores.isMissionPassed()) {
+            this.router.navigate(['/over']);
+          }
           this.ngOnInit();
         }, 2500);
       }
