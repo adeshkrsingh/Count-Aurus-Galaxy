@@ -1,0 +1,8 @@
+.img {
+  height: 30vh;
+  margin-top: 50vh;
+  text-align: center;
+  position: fixed;
+  margin-left: -10vw;
+  z-index: 50;
+}

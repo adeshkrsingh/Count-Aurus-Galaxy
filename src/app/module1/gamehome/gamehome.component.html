@@ -1,3 +1,101 @@
-<p>
-  gamehome works!
+<!-- <p *ngIf="dragging">
+  Dragged Number {{ dragitem }}
 </p>
+<h1> Level 1</h1> -->
+
+<!-- <div *ngFor="let itm of itemsArray" [dragDirective]='item' [dragHightlight]="'highlight'" (releaseDrop)="releaseDrop($event)"
+  (startDrag)="startDrag(item, itm)">
+  <h1>Drag Directive</h1>
+</div> -->
+<app-check *ngIf="showCheck"></app-check>
+
+<app-loading *ngIf="showLoader"> </app-loading>
+
+<div class="container image-display"  *ngIf="!showLoader">
+  <div class="row text-center">
+    <div class="col-4 box1">
+      <div *ngFor="let itms of itemsTens">
+        <img class="img-tens" src="assets/images/module1/ten-block.png" alt="">
+      </div>
+
+    </div>
+    <div class="col-4 box2">
+      <div class="num-drop-tens" dropDirective (dropEvent)="addTensDropItem($event)">
+        <h3 class="tens-title"> Tens </h3>
+        <div class="correct-tens">
+          <span *ngIf="isTensCorrect" >
+            <img class="img-correct" src="assets/images/module1/correct.png" alt="">
+          </span>
+        </div>
+        <div class="tens"> {{ numberTens }} </div>
+      </div>
+
+      <div class="num-drop-ones" dropDirective (dropEvent)="addOnesDropItem($event)">
+        <h3 class="ones-title"> Ones </h3>
+        <div class="correct-ones">
+          <span *ngIf="isOnesCorrect" >
+            <img class="img-correct" src="assets/images/module1/correct.png" alt="">
+          </span>
+        </div>
+        <div class="ones"> {{ numberOnes }} </div>
+      </div>
+    </div>
+    <div class="col-4 box3">
+      <div *ngFor="let itms of itemsOnes">
+        <img class="img-ones" src="assets/images/module1/one-block.png" alt="">
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="col-12">
+    <h1> {{message}}</h1>
+  </div>
+
+
+
+
+
+  <div class="number-holder text-center" style="margin-top: 3vh;">
+    <div class="num-box" [dragDirective]='item' (startDrag)="startDrag(item, 0)">
+      <span class="num-title"> 0 </span>
+    </div>
+    <div class="num-box" [dragDirective]='item' (startDrag)="startDrag(item, 1)">
+      <span class="num-title"> 1 </span>
+    </div>
+    <div class="num-box" [dragDirective]='item' (startDrag)="startDrag(item, 2)">
+      <span class="num-title"> 2 </span>
+    </div>
+    <div class="num-box" [dragDirective]='item' (startDrag)="startDrag(item, 3)">
+      <span class="num-title"> 3 </span>
+    </div>
+
+    <div class="num-box" [dragDirective]='item' (startDrag)="startDrag(item, 4)">
+      <span class="num-title"> 4 </span>
+    </div>
+
+    <div class="num-box" [dragDirective]='item' (startDrag)="startDrag(item, 5)">
+      <span class="num-title"> 5 </span>
+    </div>
+
+    <div class="num-box" [dragDirective]='item' (startDrag)="startDrag(item, 6)">
+      <span class="num-title"> 6 </span>
+    </div>
+
+    <div class="num-box" [dragDirective]='item' (startDrag)="startDrag(item, 7)">
+      <span class="num-title"> 7 </span>
+    </div>
+
+    <div class="num-box" [dragDirective]='item' (startDrag)="startDrag(item, 8)">
+      <span class="num-title"> 8 </span>
+    </div>
+
+    <div class="num-box" [dragDirective]='item' (startDrag)="startDrag(item, 9)">
+      <span class="num-title"> 9 </span>
+    </div>
+
+  </div>
+
+
+</div>

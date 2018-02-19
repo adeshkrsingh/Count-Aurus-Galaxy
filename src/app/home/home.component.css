@@ -1,0 +1,16 @@
+
+h1 {
+    font-size: 12vh;
+    color: white;
+    font-weight: 900;
+    margin-top: 20vh;
+    /* font-family: 'Permanent Marker', cursive; */
+}
+.btn {
+    margin-top: 10vh;
+    width: 20vw;
+    height: 6vw;
+}
+.play-now {
+    font-size: 3vw;
+}

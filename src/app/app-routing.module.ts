@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { GameoverComponent } from './gameover/gameover.component';
 
 const routes: Routes = [
 
@@ -10,13 +11,17 @@ const routes: Routes = [
         component: HomeComponent,
     },
     {
-        path: 'project',
+        path: 'module1',
         loadChildren: './module1/module1.module#Module1Module',
     },
     {
-        path: 'user',
-        loadChildren: './authorization/authorization.module#AuthorizationModule',
+        path: 'over',
+        component: GameoverComponent,
     },
+    // {
+    //     path: 'user',
+    //     loadChildren: './authorization/authorization.module#AuthorizationModule',
+    // },
     // {
     //   path: 'game',
     //   loadChildren: './game/game.module#GameModule',

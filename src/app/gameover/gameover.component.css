@@ -1,0 +1,26 @@
+.container {
+    margin-top: 15vh;
+}
+.title {
+    font-size: 10vh;
+    line-height: 10vh;
+}
+.btn-play {
+    height: 16vh;
+    width : 28vw;
+    margin: 15vh 5vw 5vh 5vw;
+}
+.btn-play-txt {
+    font-size: 5vh;
+}
+.btn-next {
+    height: 10vh;
+    width: 20vw;
+    margin: 5vh 5vw 5vh 5vw;
+}
+.btn-next-txt {
+    font-size: 4vh;
+}
+.img1, .img2 {
+    height: 70%;
+}

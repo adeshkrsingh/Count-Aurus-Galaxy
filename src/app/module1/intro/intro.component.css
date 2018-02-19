@@ -1,0 +1,24 @@
+.module1-intro {
+    padding-top: 5vh;
+}
+.btn-help {
+    height: 5vh;
+}
+.btn-play {
+    height: 10vh;
+    width: 35vw;
+}
+.module1-title {
+    font-size: 20vh;
+}
+.module1-list {
+    font-size: 5vh;
+}
+.module1-earning {
+    min-height: 30vh;
+    width: 100%;
+}
+.icon1 {
+    margin-right: 10vw;
+    height: 25vh;
+}
