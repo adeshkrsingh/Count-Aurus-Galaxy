@@ -7,7 +7,7 @@
   (startDrag)="startDrag(item, itm)">
   <h1>Drag Directive</h1>
 </div> -->
-<app-close> </app-close>
+
 <app-check *ngIf="showCheck"></app-check>
 
 <app-loading *ngIf="showLoader"> </app-loading>
@@ -59,41 +59,41 @@
 
 
   <div class="number-holder text-center" style="margin-top: 3vh;">
-    <div class="num-box" [dragDirective]='item' (startDrag)="startDrag(item, 0)">
+    <!-- <div class="num-box" [dragDirective]='item' (startDrag)="startDrag(item, 0)">
       <span class="num-title"> 0 </span>
-    </div>
+    </div> -->
     <div class="num-box" [dragDirective]='item' (startDrag)="startDrag(item, 1)">
-      <span class="num-title"> 1 </span>
+      <span class="num-title"  style="color:#ABEBC6"> 1 </span>
     </div>
     <div class="num-box" [dragDirective]='item' (startDrag)="startDrag(item, 2)">
-      <span class="num-title"> 2 </span>
+      <span class="num-title"  style="color:#85c1e9"> 2 </span>
     </div>
     <div class="num-box" [dragDirective]='item' (startDrag)="startDrag(item, 3)">
-      <span class="num-title"> 3 </span>
+      <span class="num-title"  style="color:#f4d03f"> 3 </span>
     </div>
 
     <div class="num-box" [dragDirective]='item' (startDrag)="startDrag(item, 4)">
-      <span class="num-title"> 4 </span>
+      <span class="num-title"  style="color:#b3b6b7"> 4 </span>
     </div>
 
     <div class="num-box" [dragDirective]='item' (startDrag)="startDrag(item, 5)">
-      <span class="num-title"> 5 </span>
+      <span class="num-title"  style="color:#edbb99"> 5 </span>
     </div>
 
     <div class="num-box" [dragDirective]='item' (startDrag)="startDrag(item, 6)">
-      <span class="num-title"> 6 </span>
+      <span class="num-title"  style="color:#5dade2"> 6 </span>
     </div>
 
     <div class="num-box" [dragDirective]='item' (startDrag)="startDrag(item, 7)">
-      <span class="num-title"> 7 </span>
+      <span class="num-title"  style="color:#196f3d"> 7 </span>
     </div>
 
     <div class="num-box" [dragDirective]='item' (startDrag)="startDrag(item, 8)">
-      <span class="num-title"> 8 </span>
+      <span class="num-title"  style="color:#d35400"> 8 </span>
     </div>
 
     <div class="num-box" [dragDirective]='item' (startDrag)="startDrag(item, 9)">
-      <span class="num-title"> 9 </span>
+      <span class="num-title"  style="color:#f1cd0f"> 9 </span>
     </div>
 
   </div>

@@ -21,4 +21,8 @@ export class IntroComponent implements OnInit {
     this.router.navigate(['/module1/play']);
   }
 
+  scoreGlobal() {
+    this.router.navigate(['/score']);
+  }
+
 }

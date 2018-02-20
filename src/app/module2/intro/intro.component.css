@@ -1,0 +1,74 @@
+
+.module2-intro {
+    font-family: 'Pacifico', cursive;
+}
+@media only screen and (min-width: 650px) {
+
+.module2-intro {
+    padding-top: 5vh;
+}
+.btn-help {
+    height: 5vh;
+}
+.btn-play {
+    height: 12vh;
+    width: 35vw;
+}
+.module2-title {
+    font-size: 20vh;
+}
+.module2-list {
+    font-size: 5vh;
+}
+.module2-earning {
+    min-height: 30vh;
+    width: 100%;
+}
+.icon1 {
+    margin-right: 10vw;
+    height: 25vh;
+}
+.icon2 {
+    height: 60%;
+}
+.txt1 {
+    font-size: 250%;
+}
+
+}
+
+@media only screen and (max-width: 650px) {
+
+.module2-intro {
+    padding-top: 5vh;
+}
+.btn-help {
+    height: 5vh;
+}
+.btn-play {
+    height: 18vh;
+    width: 35vw;
+    margin: 5px;
+}
+.module2-title {
+    font-size: 20vh;
+}
+.module2-list {
+    font-size: 5vh;
+}
+.module2-earning {
+    min-height: 30vh;
+    width: 100%;
+}
+.icon1 {
+    margin-right: 10vw;
+    height: 25vh;
+}
+.icon2 {
+    height: 60%;
+}
+.txt1 {
+    font-size: 150%;
+}
+
+}

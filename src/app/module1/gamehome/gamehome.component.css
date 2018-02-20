@@ -1,18 +1,25 @@
+.image-display {
+    font-family: 'Pacifico', cursive;
+}
+@media only screen and (min-width: 650px) {
 .drag-items {
     width: fit-content;
     height: fit-content;
 }
-
+.number-holder  {
+    padding-left: 8vw;
+}
 .num-box {
     width: 5vw;
     margin-left: 1vw;
     margin-right: 1vw;
-    border: 1px solid rgb(255, 255, 255);
+    /* border: 1px solid rgb(255, 255, 255); */
     height: 10vh;
     float: left;
+    font-family: 'Permanent Marker', cursive;
 }
 .num-title {
-    font-size: 7vh;
+    font-size: 9vh;
     padding-top: 1vh;
 }
 .correct-ones , .correct-tens {
@@ -39,7 +46,97 @@
 }
 .box1, .box2, .box3 {
     height: 50vh;
-    border: 1px solid wheat;
+    /* border: 1px solid wheat; */
+}
+.image-display {
+    margin-top: 20vh;
+    margin-bottom: 2vh;
+}
+.num-drop-tens {
+    width: 9vw;
+    height: 32vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 9vh;
+    border-radius: 0.5vw;
+    border: 2px solid whitesmoke;
+    background-color: red;
+    opacity: 0.6;
+    float: left;
+}
+.num-drop-ones {
+    width: 9vw;
+    height: 32vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 9vh;
+    margin-bottom: 0;
+    border-radius: 0.5vw;
+    border: 2px solid whitesmoke;
+    background-color: rgb(40, 9, 218);
+    opacity: 0.6;
+    float: left;
+}
+.tens, .ones {
+    font-size: 20vh;
+    font-family: 'Indie Flower', serif;
+    /* bottom: 1vh; */
+}
+.tens-title {
+    margin-top: -8vh;
+}
+.ones-title {
+    margin-top: -8vh;
+}
+
+}
+
+@media only screen and (max-width: 650px) {
+    .drag-items {
+    width: fit-content;
+    height: fit-content;
+}
+.number-holder  {
+    padding-left: 8vw;
+}
+.num-box {
+    width: 5vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    /* border: 1px solid rgb(255, 255, 255); */
+    height: 10vh;
+    float: left;
+    font-family: 'Permanent Marker', cursive;
+}
+.num-title {
+    font-size: 9vh;
+    padding-top: 1vh;
+}
+.correct-ones , .correct-tens {
+    height: 5vh;
+    margin-top: 0.5vh;
+}
+.img-tens {
+    height: 20vh;
+    margin-right: 0.5vw;
+    float: left;
+    margin-top: 15vh;
+}
+.img-correct {
+    height: 5vh;
+    bottom: 10px;
+    position: relative;
+    z-index: 10;
+}
+.img-ones {
+    width: 2.5vw;
+    margin-right: 0.5vw;
+    float: left;
+    margin-top: 15vh;
+}
+.box1, .box2, .box3 {
+    height: 50vh;
+    /* border: 1px solid wheat; */
 }
 .image-display {
     margin-top: 20vh;
@@ -75,8 +172,9 @@
     /* bottom: 1vh; */
 }
 .tens-title {
-    margin-top: -5vh;
+    margin-top: -15vh;
 }
 .ones-title {
-    margin-top: -5vh;
+    margin-top: -15vh;
+}
 }

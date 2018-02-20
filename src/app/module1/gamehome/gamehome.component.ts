@@ -40,9 +40,9 @@ export class GamehomeComponent implements OnInit {
       this.randomItemsTens();
       this.message = 'Drag Numbers';
       this.showLoader = false;
-      this.playAudio();
+      // this.playAudio();
+      this.myscores.playSound('media2.mp3');
     }, 2000);
-    
   }
 
   refresh(): void {

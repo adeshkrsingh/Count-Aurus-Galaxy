@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { GameoverComponent } from './gameover/gameover.component';
+import { ScorepageComponent } from './scorepage/scorepage.component';
 
 const routes: Routes = [
 
@@ -15,21 +16,17 @@ const routes: Routes = [
         loadChildren: './module1/module1.module#Module1Module',
     },
     {
+        path: 'module2',
+        loadChildren: './module2/module2.module#Module2Module',
+    },
+    {
         path: 'over',
         component: GameoverComponent,
     },
-    // {
-    //     path: 'user',
-    //     loadChildren: './authorization/authorization.module#AuthorizationModule',
-    // },
-    // {
-    //   path: 'game',
-    //   loadChildren: './game/game.module#GameModule',
-    // },
-    // {
-    //   path: 'p1',
-    //   loadChildren: './shared/shared.module#SharedModule',
-    // },
+    {
+        path: 'score',
+        component: ScorepageComponent,
+    },
     {
         path: '**',
         component: PagenotfoundComponent,

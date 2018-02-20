@@ -1,16 +1,67 @@
+@media only screen and (min-width: 650px) {
 
-h1 {
-    font-size: 12vh;
-    color: white;
-    font-weight: 900;
-    margin-top: 20vh;
-    /* font-family: 'Permanent Marker', cursive; */
+.container {
+    margin-top: 15vh;
 }
-.btn {
-    margin-top: 10vh;
+.title {
+    font-size: 10vh;
+    line-height: 10vh;
+}
+.btn-play {
+    height: 16vh;
+    width : 28vw;
+    margin: 15vh 5vw 5vh 5vw;
+}
+.btn-play-txt {
+    font-size: 5vh;
+}
+.btn-next {
+    height: 10vh;
     width: 20vw;
-    height: 6vw;
+    margin: 5vh 5vw 5vh 5vw;
 }
-.play-now {
-    font-size: 3vw;
+.btn-next-txt {
+    font-size: 4vh;
+}
+.img1, .img2 {
+    height: 70%;
+}
+}
+
+@media only screen and (max-width: 650px) {
+
+.container {
+    margin-top: 15vh;
+    /* transform: scale(0.7); */
+    position: fixed;
+}
+.title {
+    font-size: 10vh;
+    line-height: 10vh;
+}
+.btn-play {
+    height: 16vh;
+    width : 28vw;
+    margin: 15vh 5vw 5vh 5vw;
+}
+.btn-play-txt {
+    font-size: 5vh;
+}
+.btn-next {
+    height: 10vh;
+    width: 20vw;
+    margin: 5vh 5vw 5vh 5vw;
+}
+.btn-next-txt {
+    font-size: 4vh;
+}
+.img1, .img2 {
+    height: 70%;
+}
+.img5 {
+    height: 150px;
+}
+.heading2 {
+    font-size: 24px;
+}
 }

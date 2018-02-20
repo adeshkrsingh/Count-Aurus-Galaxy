@@ -7,6 +7,7 @@ import {
   transition
 } from '@angular/animations';
 import { Router } from '@angular/router';
+import { ScoreService } from '../services/score.service';
 
 @Component({
   selector: 'app-home',
@@ -15,9 +16,10 @@ import { Router } from '@angular/router';
   animations: [
     trigger('heroState', [
       state('inactive', style({
-        // backgroundColor: '#eee',
+        backgroundColor: 'green',
         transform: 'scale(1)'
-      })),
+      })
+    ),
       state('active', style({
         // backgroundColor: '#cfd8dc',
         transform: 'scale(1.1)'
@@ -30,7 +32,14 @@ import { Router } from '@angular/router';
 export class HomeComponent implements OnInit {
   public name: string;
   public state = 'inactive'
-  constructor(private router: Router,) { }
+  constructor(private router: Router, private myscores: ScoreService) { }
+
+  playAudio() {
+    var audio = new Audio();
+    audio.src = "assets/images/media/media1.mp3";
+    audio.load();
+    audio.play();
+  }
 
   toggleState() {
     this.state = this.state === 'active' ? 'inactive' : 'active';
@@ -39,13 +48,21 @@ export class HomeComponent implements OnInit {
       setTimeout(() => {
         this.router.navigate(['/module1']);
       }, 1000);
-    }, 1000);
+    }, 500);
   }
 
   ngOnInit() {
+    // this.playAudio();
+    this.myscores.playSound('media1.mp3');
     setTimeout(() => {
       this.state = this.state === 'active' ? 'inactive' : 'active';
-    }, 1500);
+      setTimeout(() => {
+        this.state = this.state === 'active' ? 'inactive' : 'active';
+      }, 1500);
+      setTimeout(() => {
+        this.state = this.state === 'active' ? 'inactive' : 'active';
+      }, 1000);
+    }, 500);
   }
 
 }
